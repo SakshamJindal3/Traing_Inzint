@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="xyz">Click Me!</button>
+    <br>
+    Enter some text: <input type="text" name="txt" value="Hello" onchange="myFunction(this.value)">
+
+
+
+    <script>
+        function myFunction(val) {
+        alert("The input value has changed. The new value is: " + val);
+        }
+        document.getElementById("xyz").addEventListener("click", () => 
+        { 
+            let x=confirm("Are you sure?")
+            if(x==true)
+            document.getElementById("xyz").innerHTML="Unclick me!"
+            else
+            document.getElementById("xyz").innerHTML="click me again"
+        }
+        );
+    </script>
+</body>
+</html>

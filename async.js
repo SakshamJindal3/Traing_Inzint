@@ -1,6 +1,7 @@
 function myDisplayer(some) {
-  setTimeout(myDisplayer,3000);
+  
   console.log(some);
+  setTimeout(myDisplayer,3000);
 }
 
 async function myFunction() {return "Hello";}
